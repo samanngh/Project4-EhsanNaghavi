@@ -19,7 +19,7 @@ for (i = 0; i < N; i++) {
   2. The performance is very similar in both cases. However, due to some small overhead, the OpenMP case takes a bit longer. For instance, when N = 200, the serial case gets executed in 33 ms, while the OpenMP case with 1 thread takes 37 ms to be run.
   3. On amd20, for threads from 1 to 128, the code got executed 10 times for each matrix sizes of `N=20, 100, 1000`.
   4. The average value of the 10 executions has been used to plot the results. In addition, the standard deviation is shown in the figure. As you can see, for `number of OMP threads = 32, 64`, some outliers exists in the data.
-  ![4](Figures/part1.png)
+  ![part1](Figures/part1.png)
   5. The difference between the results of the serial run and the parallel run with 128 threads was calculated by subtracting the two sets of outputs and summing over all components. The final result was zero, indicating that the solution is independent of the number of threads.
   
 ## Part2: Adding OpenMP threading to a simple MPI application
@@ -38,3 +38,4 @@ The output is scrambled due to race conditions between the threads. Since multip
 
 ## Part 3: Hybrid Parallel Matrix Multiplication
 There is no difference between the serial and parallel output. Therefore, the code is verified. For matrix size of `N = 20, 200, 1000`, `threads per rank = 1, 2, 4, 8, 16, 32`, and `Number of MPI ranks = 1, 2, 4`, The code got executed. The results are shown below.
+![part3](Figures/part3.png)
