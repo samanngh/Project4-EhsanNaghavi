@@ -23,7 +23,7 @@ for (i = 0; i < N; i++) {
   5. The difference between the results of the serial run and the parallel run with 128 threads was calculated by subtracting the two sets of outputs and summing over all components. The final result was zero, indicating that the solution is independent of the number of threads.
   
 ## Part2: Adding OpenMP threading to a simple MPI application
-The output looks like something like this:
+The output looks like this:
 ```
 Hello, World! Hello, World! Hello, World! from rank: Hello, World! from rank: 1 and from thread: 1 and from thread: 3from rank: from rank: 1 and from thread: 211
  and from thread: 
