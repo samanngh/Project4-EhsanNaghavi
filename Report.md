@@ -18,4 +18,4 @@ for (i = 0; i < N; i++) {
   ```
   2. The performance is very similar in both cases. However, due to some small overhead, the OpenMP case takes a bit longer. For instance, when N = 200, the serial case gets executed in 33 ms, while the OpenMP case with 1 thread takes 37 ms to be run.
   3 and 4. The plot is shown below:
-  ![4](Figures/Part1.png)
+  ![4](Figures/part1.png)
