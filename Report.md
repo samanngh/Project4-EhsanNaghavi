@@ -35,3 +35,6 @@ Hello, World! from rank: Hello, World! from rank: Hello, World! from rank: 0 and
 0 and from thread: 1
 ```
 The output is scrambled due to race conditions between the threads. Since multiple threads are trying to write to the standard output (stdout) simultaneously, it is possible for their outputs to overlap and produce this scrambled output.
+
+## Part 3: Hybrid Parallel Matrix Multiplication
+There is no difference between the serial and parallel output. Therefore, the code is verified. For matrix size of `N=20, 200, 1000`, `threads per rank=1, 2, 4, 8, 16, 32`, and `Number of MPI ranks = 1, 2, 4`, The code got executed. The results are shown below.
