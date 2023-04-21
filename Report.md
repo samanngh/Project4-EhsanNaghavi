@@ -38,6 +38,6 @@ The output is scrambled due to race conditions between the threads. Since multip
 
 ## Part 3: Hybrid Parallel Matrix Multiplication
 There is no difference between the serial and parallel output. Therefore, the code is verified. For matrix size of `N = 20, 200, 1000`, `threads per rank = 1, 2, 4, 8, 16, 32`, and `Number of MPI ranks = 1, 2, 4`, The code got executed. The results are shown below.
-![part3](Figures/part3.png)
+![part3](Figures/part33.png)
 
 According to the figure, parallelization can result in slower code performance due to overhead when the computation are relatively low. However, as the matrix sizes increase, parallelization approaches ideal scaling, resulting in improved performance.
